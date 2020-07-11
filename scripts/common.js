@@ -49,8 +49,18 @@ function getRandomNum(n) {
     tryAgainBtn.style.display = "inline";
     ctx.font = "bold 30 px Open Sans";
     ctx.textAlign = "center";
-    ctx.fillText("Score:" + score, 300, 250);
+    ctx.fillText("Score:" + score, 300, 250)
+    //Game Win
+    if (score >= 5000) {
+    ctx.fillText("You win!", 300, 150)
+    }
+    //Game Loose  
+    if (score < 5000) {
+      ctx.fillText("You loose!", 300, 150)
+    }
   }
+    
+    
 
   function setRemoveFlag() {
 
@@ -193,7 +203,8 @@ function getRandomNum(n) {
     //Decrease move count.
     moveCount--;
 
-
+  
 
     paint()
   }
+

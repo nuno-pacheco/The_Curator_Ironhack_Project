@@ -1,6 +1,7 @@
 function initialize(){
-    timeCount = 60 * 1000 // 1 minute.
-    //timeCount = 10 * 1000 // 10 sec
+    //timeCount = 60 * 1000 // 1 minute.
+    timeCount = 30 * 1000 // 30 sec.
+    //timeCount = 10 * 1000 // 10 sec.
     score = 0;
 
     //Create Items
@@ -32,7 +33,7 @@ function initialize(){
     // Start timer.
     timer = setInterval(checkItemStatus, 25);
     bgm.play();
-  }
+}
 
   function checkItemStatus(){
       //Decrement time count
@@ -80,7 +81,6 @@ function initialize(){
   }
 
 
-
   function paint() {
 
     //clear canvas.
@@ -114,5 +114,4 @@ function initialize(){
 
     ctx.fillText("Time Left: " + sec + ' : ' + mSec, 80, 50);
     ctx.fillText("Score: " + score, 380, 50);
-
   }
