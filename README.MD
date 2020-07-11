@@ -2,26 +2,26 @@
 
 ## Description
 
-Mitch Emhoff is our main character in a game where the player as to move Mitch in order to avoid the contact with the Coronavirus. As a player you must avoid the contact with the virus for 1 minute. If you touch the virus your character will be infected and die instantly and it's game over.
+You have to match at least 3 equal symbols to score. The symbols are inspired on actions that we have to take in a account in order to prevent the Coronavirus infetion. 
+This game tend's to be educational and is adapted for kid's also.
+Try to beat your record.
 
 MVP (DOM - CANVAS)
 
 
 ## MVP (DOM - CANVAS)
-- Game has one main character "Mitch Emhoff" that moves horizontally and vertically.
-- Coronavirus figures appear randomly from the top of the screen.
-- If Mitch collides with the virus it's game over.
-- If no virus are touched you win.
+- Game has six diferent symbols, once you match three equals you make a line and score.
+- Items appear's randomly from the top of the screen.
+- Click and drop items to make it match.
 
 
 ## Backlog
 - Timer.
 - SFX(sound effects).
+- Music speed variations.
 - Scoreboard.
-- Virus with different sizes.
-- Mask's apearence and work's like a shield.
+- Data related with the global situation of Coronavirus.
 - Text insight's related with the virus prevention.
-- Increasing dificulty.
 
 
 
@@ -48,40 +48,43 @@ game () {
 	winner () 
 }
 
-component.js
 
-component{
-	constructor ()
-	drawComponent ()
-}
+timeTrial.js
 
+function initialize()
 
-obstacles.js
+  - (Create items loop)
+  - (Get random itemsloop)
 
-class Obstacle extends Component(){
-	constructor () {}
-	draw ()
-	move ()
-}
+function check Item Status()
 
 
-player.js
+common.js
 
-class Player extends Component(){
-	constructor()
-	move()
-	crashCollision()
-}
+function get RandomNum(num)
+
+function Item(x,y)
+
+function gameOver()
+
+function setRemoveFlag()
+
+function checkColor(x,y,c)
+
+function myMouseDown(e)
+
+function mMouseUp(e)
+
+gameOver () 
+	
+winner () 
 
 
 script.js
 
-window.onload = function () {
-	document.getElementById()}
-	function startGame(){
-		newGame();
-		myGame.init()
-	}
+function set js () 
+
+function Set Bg Image ()
 
 
 ## States e States Transitions
@@ -92,7 +95,7 @@ Definition of the different states and their transition (transition functions)
 - gameOverScreen
 
 
-## Task
+## Task( have to change)
 - main - buidDom
 - main - buildSplashScreen
 - main - addEventListener
@@ -133,4 +136,4 @@ URls for the project presentation (slides)
 [Link Slides.com](http://slides.com)
 
 ### Credits
-****
+****(credit the item's)

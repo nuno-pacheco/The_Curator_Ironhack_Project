@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Curator</title>
+    <meta charset="utf-8">
+    <link rel= "stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="setBgImage()">
+    <canvas id="canvas" width="600" height="700"></canvas>
+    <div id="logo"></div>
+    <img id="bgImage" src="image/background.png" style="display:none;">
+    </div>
+    <img id="orange" src="image/items/social distance.png" style="display:none;">
+    <img id="red" src="image/items/hands.png" style="display:none;">
+    <img id="blue" src="image/items/mask.png" style="display:none;">
+    <img id="green" src="image/items/protection.png" style="display:none;">
+    <img id="grey" src="image/items/soap.png" style="display:none;">
+    <img id= "purple" src="image/items/termometro.png" style="display:none;">
+    <!--<button type="button" id="startBtn" onclick="initialize()">Start</button>-->
+    <img id="basicBtn" class="btn" src="image/buttons/basicBtn.png" onclick="setJS('basicGame.js')">
+    <img id="timeBtn" class="btn" src="image/buttons/timeBtn.png" onclick="setJS('timeTrial.js')">
+    <img id="tryAgainBtn" class="btn" src="image/buttons/tryAgainBtn.png" onclick="location.href='index.html'">
+    <audio src="sound/sound.wav" id="sound"></audio>
+    <audio src="sound/Survivor - Eye Of The Tiger.mp3" id="bgm"></audio>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/common.js"></script>
+    <script type="text/javascript" src="scripts/basicGame.js"></script>
+    <script type="text/javascript" src="scripts/timeTrial.js"></script>
+
+</body>
+</html>
