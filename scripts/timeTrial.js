@@ -40,9 +40,9 @@ function initialize(){
         timeCount -= 25;
 
       //Speed up bgm last 5 seconds
-      if (bgm.playbackRate == 1 && timeCount < 5000) {
+      if (bgm.playbackRate == 1 && timeCount < 10000) {
           bgm.pause();
-          bgm.playbackRate = 1.5;
+          bgm.playbackRate = 2.0;
           bgm.play();
       }
       
@@ -95,7 +95,7 @@ function initialize(){
     }
 
     //Text
-    ctx.font = "bold 20px Open Sans";
+    ctx.font = "bold 20px arial";
     //ctx.textAlign = "center";
 
     //Time
@@ -112,6 +112,6 @@ function initialize(){
 
 
 
-    ctx.fillText("Time Left: " + sec + ' : ' + mSec, 80, 50);
-    ctx.fillText("Score: " + score, 380, 50);
+    ctx.fillText("Time Left: " + sec + ' : ' + mSec, 500, 30);
+    ctx.fillText("Score: " + score, 70, 30);
   }

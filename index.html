@@ -7,8 +7,7 @@
 </head>
 <body onload="setBgImage()">
     <canvas id="canvas" width="600" height="700"></canvas>
-    <div id="logo"></div>
-    <img id="bgImage" src="image/background.png" style="display:none;">
+    <img id="bgImage" src="image/LOGO.png" style="display:none;">
     </div>
     <img id="orange" src="image/items/social distance.png" style="display:none;">
     <img id="red" src="image/items/hands.png" style="display:none;">
@@ -20,13 +19,14 @@
     <img id="basicBtn" class="btn" src="image/buttons/basicBtn.png" onclick="setJS('basicGame.js')">
     <img id="timeBtn" class="btn" src="image/buttons/timeBtn.png" onclick="setJS('timeTrial.js')">
     <img id="tryAgainBtn" class="btn" src="image/buttons/tryAgainBtn.png" onclick="location.href='index.html'">
-    <audio src="sound/sound.wav" id="sound" volume=0.2></audio>
+    <audio src="sound/sound.mp3" id="sound" volume=0.2></audio>
     <audio src="sound/background_music.mp3" id="bgm" volume=0.2></audio>
 
     <script type="text/javascript" src="scripts/script.js"></script>
     <script type="text/javascript" src="scripts/common.js"></script>
     <script type="text/javascript" src="scripts/basicGame.js"></script>
     <script type="text/javascript" src="scripts/timeTrial.js"></script>
+    <script type="text/javascript" src="scripts/data_display.js"></script>
 
 </body>
 </html>

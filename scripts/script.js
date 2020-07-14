@@ -11,8 +11,16 @@ var bgm = document.getElementById('bgm');
 var canvas = document.getElementById("canvas");
 ctx = canvas.getContext("2d");
 
+//Splash screen
 function setBgImage(){
-  ctx.drawImage(bgImage, 0, 0);
+  ctx.drawImage(bgImage, 135, 30, 335, 300);
+  ctx.font = "20px arial";
+  ctx.textAlign = "center";
+  ctx.fillText("Don't get caught up!", 300, 360 )
+  ctx.fillText("Are you fast enought to prevent yourself to get infected?", 300, 400);
+  ctx.font = "15px arial";
+  ctx.fillText("Score 10'000 point's in 20 moves.", 300, 535);
+  ctx.fillText("Score 10'000 point's in 1 minute.", 300, 615);
 }
 
 function setJS(fileName) {
@@ -27,6 +35,7 @@ function setJS(fileName) {
     initialize();
   }, 200);
 }
+
 
 
 
