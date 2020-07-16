@@ -18,9 +18,9 @@ function setBgImage(){
   ctx.textAlign = "center";
   ctx.fillText("Don't get caught up!", 300, 360 )
   ctx.fillText("Are you fast enought to prevent yourself to get infected?", 300, 400);
-  ctx.font = "15px arial";
-  ctx.fillText("Score 10'000 point's in 20 moves.", 300, 535);
-  ctx.fillText("Score 10'000 point's in 1 minute.", 300, 615);
+  ctx.font = "12px arial";
+  ctx.fillText("Score 10'000 point's in 20 moves.", 300, 518);
+  ctx.fillText("Score 10'000 point's in 1 minute.", 300, 597);
 }
 
 function setJS(fileName) {

@@ -1,6 +1,6 @@
 function initialize(){
-    //timeCount = 60 * 1000 // 1 minute.
-    timeCount = 30 * 1000 // 30 sec.
+    timeCount = 60 * 1000 // 1 minute.
+    //timeCount = 30 * 1000 // 30 sec.
     //timeCount = 10 * 1000 // 10 sec.
     score = 0;
 
@@ -114,4 +114,6 @@ function initialize(){
 
     ctx.fillText("Time Left: " + sec + ' : ' + mSec, 500, 30);
     ctx.fillText("Score: " + score, 70, 30);
+    ctx.font = "italic 20px arial";
+    ctx.fillText('"The best medicine is prevention"',300, 75);
   }

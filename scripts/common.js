@@ -52,27 +52,46 @@ function getRandomNum(n) {
     tryAgainBtn.style.display = "inline";
     ctx.font = "bold 20px arial";
     ctx.textAlign = "center";
-    ctx.fillText("Score:  " + score, 300, 250)
+    ctx.fillText("Score:  " + score, 300, 360)
   
     //Random Quotes
   
     //Game Win
-    if (score >= 5000) {
-    ctx.fillText("You know how to deal with the Covid!", 300, 100)
+    if (score >= 10000) {
+    ctx.drawImage(bgImage, 135, 30, 335, 300);
+    ctx.fillStyle= 'green';
+    ctx.font = "bold 25px arial"; 
+    ctx.fillText("You know how to deal with the Covid!", 300, 420);
+    ctx.fillStyle= 'black';
+    ctx.font = "17px arial";
+    ctx.fillText(randomAdvice, 300, 570);
+    ctx.font = "italic 12px arial"
+    ctx.fillText("Advice from the World Health Organization.",300, 610);
+    ctx.drawImage(whoLogo, 140, 587, 35, 35);
     }
+
     //Game Loose  
-    if (score < 5000) {
-      ctx.fillText("Take care, you can be infected!", 300, 100)
+    if (score < 10000) {
+      ctx.drawImage(bgImage, 135, 30, 335, 300);
+      ctx.fillStyle= 'red';
+      ctx.font = "bold 25px arial";
+      ctx.fillText("Take care, you can be infected!", 300, 420);
+      ctx.fillStyle= 'black';
+      ctx.font = "17px arial";
+      ctx.fillText(randomAdvice,300, 570);
+      ctx.font = "italic 12px arial";
+      ctx.fillText("Advice from the World Health Organization.",300, 610);
+      ctx.drawImage(whoLogo, 140, 587, 35, 35);
     }
 
     //Covid Data
-    if (gameOver = true) {
-      ctx.fillText("Total People infected: " + "tot", 300, 500);
-      ctx.fillText("Total People Died: " + ".death", 300, 550);
+    /*if (gameOver = true) {
+      ctx.fillText("Total People infected: " + total_cases, 300, 550);
+      ctx.fillText("Total People Died: " + total_deaths, 300, 600);
       //ctx.fillText("Data from <span>thevirustrackercom</span>",400, 650)
     }
     getCovid()
-    
+    */
   }
     
     

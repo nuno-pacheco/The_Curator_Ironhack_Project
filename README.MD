@@ -12,7 +12,7 @@ MVP (DOM - CANVAS)
 ## MVP (DOM - CANVAS)
 - Game has six diferent symbols, once you match three equals you make a line and score.
 - Items appear's randomly from the top of the screen.
-- Click and drop items to make it match.
+- Drag and drop items to make it match.
 
 
 ## Backlog
@@ -26,27 +26,27 @@ MVP (DOM - CANVAS)
 
 
 ## Data structure
-main.js
+common.js
 
-buildSplashScreen(){}
-buildGameScreen(){}
-buildGameOverScreen(){}
-buildWinScreen(){}
-
-
-game.js
-
-game () {
-    constructor()
-	init() 
-	start ()
-	createObstacles ()
-	drawBackground () 
-	drawMainCharacter ()
-	clearCanvas () 
-	gameOver () 
-	winner () 
+function getRandomNum(){
+	function Item(){}
+	function gameOver(){}
+    function setRemoveFag(){}
+	function fall(){}
+	function checkColor(){}
+	function myMouseDown(){}
+	function myMouseUp(){}
 }
+
+
+script.js
+
+
+function setBgImage () 
+
+function setJS(fileName)
+    
+
 
 
 timeTrial.js
@@ -59,23 +59,6 @@ function initialize()
 function check Item Status()
 
 
-common.js
-
-function get RandomNum(num)
-
-function Item(x,y)
-
-function gameOver()
-
-function setRemoveFlag()
-
-function checkColor(x,y,c)
-
-function myMouseDown(e)
-
-function mMouseUp(e)
-
-gameOver () 
 	
 winner () 
 
@@ -87,6 +70,11 @@ function set js ()
 function Set Bg Image ()
 
 
+data_display.js
+
+var adviceCovid = []
+
+
 ## States e States Transitions
 Definition of the different states and their transition (transition functions)
 
@@ -95,8 +83,7 @@ Definition of the different states and their transition (transition functions)
 - gameOverScreen
 
 
-## Task( have to change)
-- main - buidDom
+## Task
 - main - buildSplashScreen
 - main - addEventListener
 - main - builGameScreen
@@ -105,16 +92,10 @@ Definition of the different states and their transition (transition functions)
 - game - buildCanvas
 - game - updateCanvas
 - game - drawCanvas
-- obstacle - draw
-- obstacle - move
-- game - addObstacle
-- player - draw
-- player - move
-- player - shoot
-- game - addPlayer
-- game - checkCollision
-- game - GameOver
-- game - addEventListener 
+- item - paint
+- item - move
+- game - addNewItems
+
 
 
 
@@ -132,8 +113,7 @@ URls for the project repo and deploy
 
 
 ### Slides
-URls for the project presentation (slides)
-[Link Slides.com](http://slides.com)
+URls for the project presentation (https://docs.google.com/presentation/d/1VL7DVnCal7TQh9W5lTTbCsQ3wrRXxHAEE2m3LfeHzfk/edit#slide=id.p)
 
 ### Credits
 ****(credit the item's)
